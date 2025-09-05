@@ -3,12 +3,19 @@
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
+type ResponseOption = {
+  id: number;
+  tone: string;
+  preview: string;
+  full: string;
+};
+
 export default function Home() {
   const [showSimulation, setShowSimulation] = useState(false);
   const [showNotification, setShowNotification] = useState(false);
   const [showEmailContent, setShowEmailContent] = useState(false);
   const [showResponseOptions, setShowResponseOptions] = useState(false);
-  const [selectedResponse, setSelectedResponse] = useState(null);
+  const [selectedResponse, setSelectedResponse] = useState<ResponseOption | null>(null);
   const [messageSent, setMessageSent] = useState(false);
   const [showFullResponse, setShowFullResponse] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
@@ -48,7 +55,7 @@ export default function Home() {
     }, 2000);
   };
 
-  const selectResponse = (response) => {
+  const selectResponse = (response: ResponseOption) => {
     setSelectedResponse(response);
     setEditedMessage(response.full);
     setShowResponseOptions(false);
@@ -62,15 +69,14 @@ export default function Home() {
   const handleSaveEdit = () => {
     setIsEditing(false);
     // Update the selected response with the edited message
-    setSelectedResponse({
-      ...selectedResponse,
-      full: editedMessage
-    });
+    setSelectedResponse(prev =>
+      prev ? { ...prev, full: editedMessage } : prev
+    );
   };
 
   const handleCancelEdit = () => {
     setIsEditing(false);
-    setEditedMessage(selectedResponse.full);
+    setEditedMessage(selectedResponse?.full ?? '');
   };
 
   const sendMessage = () => {
@@ -94,7 +100,7 @@ export default function Home() {
     setMessageSent(false);
   };
 
-  const responseOptions = [
+  const responseOptions: ResponseOption = [
     {
       id: 1,
       tone: "Professional & Apologetic",
