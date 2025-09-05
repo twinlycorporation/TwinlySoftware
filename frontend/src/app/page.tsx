@@ -227,7 +227,13 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 rounded-2xl"></div>
               </button>
               
-              <button className="group relative bg-white text-gray-700 px-10 py-4 rounded-2xl text-lg font-semibold border-2 border-gray-200 hover:border-gray-300 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+              <a
+                href="https://github.com/twinlycorporation/TwinlySoftware/releases/latest/download/Twinly-Setup.exe"
+                target="_blank"
+                rel="noopener"
+                download
+                className="group relative bg-white text-gray-700 px-10 py-4 rounded-2xl text-lg font-semibold border-2 border-gray-200 hover:border-gray-300 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 inline-block"
+              >
                 <div className="flex items-center space-x-3">
                   <svg className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M3 12V6.75l6-1.32v6.48L3 12zm17-9v8.75l-10 .15V5.21L20 3zM3 13l6 .09v6.81l-6-1.15V13zm17 .25V22l-10-1.91v-6.84l10 .15z"/>
@@ -235,7 +241,7 @@ export default function Home() {
                   <span>Download for Windows</span>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-r from-gray-100/0 via-gray-100/20 to-gray-100/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 rounded-2xl"></div>
-              </button>
+              </a>
             </div>
 
             {/* Trust Indicators */}
