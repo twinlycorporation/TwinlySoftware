@@ -16,11 +16,19 @@
   "build": {
     "appId": "com.twinly.desktop",
     "productName": "Twinly",
-    "files": [
-      "**/*",
-      "!node_modules/*/{README.md,readme.md,*.map}",
-      "!**/*.map"
-    ],
+    "mac": {
+      "target": ["dmg", "zip"]
+    },
+    "dmg": {
+      "artifactName": "Twinly-Setup.dmg"
+    },
+    "win": {
+      "target": ["nsis"]
+    },
+    "nsis": {
+      "oneClick": false
+    }
+  },
     "directories": { "buildResources": "build" },
     "win": {
       "target": ["nsis", "portable"]
