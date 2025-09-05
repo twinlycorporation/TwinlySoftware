@@ -227,7 +227,7 @@ export default function Home() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
               <a
-                href="https://github.com/twinlycorporation/TwinlySoftware/releases/latest/download/Twinly-Setup.dmg"
+                href="https://github.com/twinlycorporation/TwinlySoftware/releases/download/v0.0.2/Twinly-Setup-0.0.1.dmg"
                 target="_blank"
                 rel="noopener"
                 className="group relative bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-4 rounded-2xl text-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 inline-block"
@@ -242,7 +242,7 @@ export default function Home() {
               </a>
 
               <a
-                href="https://github.com/twinlycorporation/TwinlySoftware/releases/latest/download/Twinly-Setup.exe"
+                href="https://github.com/twinlycorporation/TwinlySoftware/releases/download/v0.0.2/Twinly-Setup.exe"
                 target="_blank"
                 rel="noopener"
                 className="group relative bg-white text-gray-700 px-10 py-4 rounded-2xl text-lg font-semibold border-2 border-gray-200 hover:border-gray-300 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 inline-block"
