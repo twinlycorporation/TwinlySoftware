@@ -242,7 +242,7 @@ export default function Home() {
               </a>
 
               <a
-                href="https://github.com/twinlycorporation/TwinlySoftware/releases/download/v0.0.2/Twinly-Setup.exe"
+                href="https://github.com/twinlycorporation/TwinlySoftware/releases/download/v0.0.3/Twinly-Setup-0.0.3.exe"
                 target="_blank"
                 rel="noopener"
                 className="group relative bg-white text-gray-700 px-10 py-4 rounded-2xl text-lg font-semibold border-2 border-gray-200 hover:border-gray-300 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 inline-block"
