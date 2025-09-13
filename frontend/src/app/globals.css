@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+<<<<<<< HEAD
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -104,3 +105,123 @@ body {
 .animate-checkmark {
   animation: checkmark 0.6s ease-in-out 0.3s both;
 }
+=======
+/* ===== Monochrome theme (global) ===== */
+:root {
+  --bg: #000000;
+  --fg: #ffffff;
+  --card: #0f0f10;
+  --muted: #a3a3a3;
+  --border: rgba(255,255,255,.12);
+}
+
+html, body { min-height: 100%; }
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Opt-in dark scope (we apply on <body>) */
+.mono { background:#000 !important; color:#fff !important; }
+
+/* Utilities used across pages */
+.text-white-imp { color:#fff !important; }
+.on-white, .on-white * { color:#000 !important; }
+
+/* Cards / surfaces */
+.pink-panel, .pink-panel-sm, .pink-surface {
+  /* keep white cards readable, just neutral */
+  background: #ffffff !important;
+  color: #111 !important;
+  border: 1px solid rgba(0,0,0,.10) !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,.06);
+}
+
+/* Testimonials — white cards on dark page */
+.testimonial-card {
+  border-radius: 18px;
+  background: #b4b4b4 !important;
+  color: #111 !important;
+  border: 1px solid rgba(0,0,0,.12);
+  box-shadow: 0 12px 28px rgba(0,0,0,.08);
+}
+
+/* Neutral badge for platform chips inside the cards */
+.testimonial-card .badge {
+  background: #ffffff !important;   /* gray-100 */
+  color: #111 !important;
+  border: 1px solid rgba(0,0,0,.12);
+}
+
+
+/* Hero overlay text should be white on dark scenes */
+.mono .hero-overlay, .mono .hero-overlay * { color:#fff !important; }
+
+/* CTA button previously pink → neutral white */
+.cta-gradient {
+  background: linear-gradient(180deg,#ffffff 0%, #e6e6e6 100%) !important;
+  color: #111 !important;
+  border: 1px solid rgba(255,255,255,.15) !important;
+}
+
+/* Windows-like background → grayscale waves */
+.windows11-bg {
+  position: relative;
+  background-image:
+    radial-gradient(900px 520px at 20% 25%, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.04) 46%, transparent 66%),
+    radial-gradient(1000px 600px at 80% 30%, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.03) 50%, transparent 70%),
+    radial-gradient(800px 520px at 35% 80%, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.03) 45%, transparent 65%),
+    linear-gradient(180deg, #0b0b0b 0%, #0a0a0a 100%);
+  background-blend-mode: screen, screen, screen, normal;
+}
+
+/* Neutralize any colored badges used in the home demo */
+.mono .bg-yellow-100,
+.mono .bg-green-100,
+.mono .bg-blue-100,
+.mono .bg-purple-200,
+.mono .bg-pink-50,
+.mono .bg-pink-100 { background:#1f2937 !important; color:#e5e7eb !important; }
+
+.mono .text-blue-600,
+.mono .text-green-600,
+.mono .text-purple-600,
+.mono .text-pink-700,
+.mono .text-blue-700,
+.mono .text-green-500,
+.mono .text-purple-500 { color:#e5e7eb !important; }
+
+/* Solid color dots → gray */
+.mono .bg-green-500,
+.mono .bg-blue-500,
+.mono .bg-pink-500,
+.mono .bg-purple-500 { background:#e5e7eb !important; color:#111 !important; }
+
+/* Nav readability on dark */
+.mono nav .bg-white { color:#000 !important; }
+
+/* ===== Animations / utilities you already use ===== */
+@keyframes slide-in { from{ transform: translateX(100%); opacity:0; } to{ transform: translateX(0); opacity:1; } }
+.animate-slide-in { animation: slide-in 0.3s ease-out; }
+
+@keyframes scale-in { 0%{ transform:scale(0.8); opacity:0; } 100%{ transform:scale(1); opacity:1; } }
+.animate-scale-in { animation: scale-in 0.3s ease-out; }
+
+/* Testimonials marquee */
+@keyframes marquee-up { from { transform: translateY(0); } to { transform: translateY(-50%); } }
+@keyframes marquee-down { from { transform: translateY(-50%); } to { transform: translateY(0); } }
+.animate-marquee-up { animation: marquee-up var(--duration, 38s) linear infinite; }
+.animate-marquee-down { animation: marquee-down var(--duration, 38s) linear infinite; }
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+}
+
+/* Small helpers */
+.line-clamp-2 { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient: vertical; overflow:hidden; }
+.line-clamp-4 { display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient: vertical; overflow:hidden; }
+
+.gpu-smooth { will-change: transform, opacity; transform: translateZ(0); backface-visibility: hidden; }
+>>>>>>> e15fe06 (Initial commit)

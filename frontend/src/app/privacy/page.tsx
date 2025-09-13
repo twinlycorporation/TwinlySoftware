@@ -1,6 +1,10 @@
 export default function PrivacyPolicy() {
   return (
+<<<<<<< HEAD
     <div className="min-h-screen bg-white">
+=======
+    <div className="min-h-screen bg-transparent">
+>>>>>>> e15fe06 (Initial commit)
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h1 className="text-4xl font-bold text-gray-900 mb-8">Privacy Policy</h1>
         
@@ -14,9 +18,15 @@ export default function PrivacyPolicy() {
             Twinly, Inc. ("we," "our," or "us") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our AI communication platform and related services (collectively, the "Service").
           </p>
           
+<<<<<<< HEAD
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">1. Information We Collect</h2>
           
           <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">1.1 Personal Information</h3>
+=======
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">1. Information We Collect</h2>
+          
+          <h3 className="text-xl font-bold text-gray-900 mt-6 mb-3">1.1 Personal Information</h3>
+>>>>>>> e15fe06 (Initial commit)
           <p className="text-gray-600 mb-4">
             We may collect personal information that you voluntarily provide to us, including but not limited to:
           </p>
@@ -28,7 +38,11 @@ export default function PrivacyPolicy() {
             <li>Profile information and user-generated content</li>
           </ul>
           
+<<<<<<< HEAD
           <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">1.2 Communication Data</h3>
+=======
+          <h3 className="text-xl font-bold text-gray-900 mt-6 mb-3">1.2 Communication Data</h3>
+>>>>>>> e15fe06 (Initial commit)
           <p className="text-gray-600 mb-4">
             To provide our AI communication services, we may process:
           </p>
@@ -39,7 +53,11 @@ export default function PrivacyPolicy() {
             <li>Response templates and style preferences</li>
           </ul>
           
+<<<<<<< HEAD
           <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">1.3 Technical Information</h3>
+=======
+          <h3 className="text-xl font-bold text-gray-900 mt-6 mb-3">1.3 Technical Information</h3>
+>>>>>>> e15fe06 (Initial commit)
           <p className="text-gray-600 mb-4">
             We automatically collect certain technical information, including:
           </p>
@@ -51,7 +69,11 @@ export default function PrivacyPolicy() {
             <li>Log files and error reports</li>
           </ul>
           
+<<<<<<< HEAD
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">2. How We Use Your Information</h2>
+=======
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">2. How We Use Your Information</h2>
+>>>>>>> e15fe06 (Initial commit)
           <p className="text-gray-600 mb-4">
             We use the collected information for the following purposes:
           </p>
@@ -65,7 +87,11 @@ export default function PrivacyPolicy() {
             <li>To protect our rights and prevent fraud</li>
           </ul>
           
+<<<<<<< HEAD
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">3. Information Sharing and Disclosure</h2>
+=======
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">3. Information Sharing and Disclosure</h2>
+>>>>>>> e15fe06 (Initial commit)
           <p className="text-gray-600 mb-4">
             We do not sell, trade, or rent your personal information to third parties. We may share your information in the following circumstances:
           </p>
@@ -77,7 +103,11 @@ export default function PrivacyPolicy() {
             <li>In connection with a business transfer or merger</li>
           </ul>
           
+<<<<<<< HEAD
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">4. Data Security</h2>
+=======
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">4. Data Security</h2>
+>>>>>>> e15fe06 (Initial commit)
           <p className="text-gray-600 mb-4">
             We implement industry-standard security measures to protect your personal information, including:
           </p>
@@ -89,7 +119,11 @@ export default function PrivacyPolicy() {
             <li>Incident response and breach notification procedures</li>
           </ul>
           
+<<<<<<< HEAD
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">5. Your Rights and Choices</h2>
+=======
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">5. Your Rights and Choices</h2>
+>>>>>>> e15fe06 (Initial commit)
           <p className="text-gray-600 mb-4">
             Depending on your jurisdiction, you may have the following rights:
           </p>
@@ -103,27 +137,47 @@ export default function PrivacyPolicy() {
             <li>Withdrawal of consent</li>
           </ul>
           
+<<<<<<< HEAD
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">6. Data Retention</h2>
+=======
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">6. Data Retention</h2>
+>>>>>>> e15fe06 (Initial commit)
           <p className="text-gray-600 mb-4">
             We retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law.
           </p>
           
+<<<<<<< HEAD
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">7. International Data Transfers</h2>
+=======
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">7. International Data Transfers</h2>
+>>>>>>> e15fe06 (Initial commit)
           <p className="text-gray-600 mb-4">
             Your information may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place for such transfers in accordance with applicable data protection laws.
           </p>
           
+<<<<<<< HEAD
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">8. Children's Privacy</h2>
+=======
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">8. Children's Privacy</h2>
+>>>>>>> e15fe06 (Initial commit)
           <p className="text-gray-600 mb-4">
             Our Service is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.
           </p>
           
+<<<<<<< HEAD
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">9. Changes to This Privacy Policy</h2>
+=======
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">9. Changes to This Privacy Policy</h2>
+>>>>>>> e15fe06 (Initial commit)
           <p className="text-gray-600 mb-4">
             We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.
           </p>
           
+<<<<<<< HEAD
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">10. Contact Information</h2>
+=======
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">10. Contact Information</h2>
+>>>>>>> e15fe06 (Initial commit)
           <p className="text-gray-600 mb-4">
             If you have any questions about this Privacy Policy or our data practices, please contact us at:
           </p>
@@ -138,4 +192,8 @@ export default function PrivacyPolicy() {
       </div>
     </div>
   );
+<<<<<<< HEAD
 } 
+=======
+} 
+>>>>>>> e15fe06 (Initial commit)
